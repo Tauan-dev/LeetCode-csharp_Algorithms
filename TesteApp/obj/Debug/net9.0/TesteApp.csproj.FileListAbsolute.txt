@@ -1,0 +1,14 @@
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\bin\Debug\net9.0\TesteApp.exe
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\bin\Debug\net9.0\TesteApp.deps.json
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\bin\Debug\net9.0\TesteApp.runtimeconfig.json
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\bin\Debug\net9.0\TesteApp.dll
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\bin\Debug\net9.0\TesteApp.pdb
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\obj\Debug\net9.0\TesteApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\obj\Debug\net9.0\TesteApp.AssemblyInfoInputs.cache
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\obj\Debug\net9.0\TesteApp.AssemblyInfo.cs
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\obj\Debug\net9.0\TesteApp.csproj.CoreCompileInputs.cache
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\obj\Debug\net9.0\TesteApp.dll
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\obj\Debug\net9.0\refint\TesteApp.dll
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\obj\Debug\net9.0\TesteApp.pdb
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\obj\Debug\net9.0\TesteApp.genruntimeconfig.cache
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\obj\Debug\net9.0\ref\TesteApp.dll
