@@ -12,3 +12,4 @@ C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\obj\Debug\net9.0\refi
 C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\obj\Debug\net9.0\TesteApp.pdb
 C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\obj\Debug\net9.0\TesteApp.genruntimeconfig.cache
 C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\obj\Debug\net9.0\ref\TesteApp.dll
+C:\Users\Tauan Neres\Documents\Projetos\Cursos\C#\TesteApp\obj\Debug\net9.0\TesteApp.sourcelink.json
