@@ -1,54 +1,47 @@
-﻿public class Solution
+﻿// Dado um array numsde tamanho n, retorne o elemento majoritário .
+
+// O elemento majoritário é aquele que aparece mais de um ⌊n / 2⌋número de vezes. Pode-se assumir que o elemento majoritário sempre existe no array.
+
+
+public class Solution
 {
-    public int[] QuickSort(int[] vetor, int left, int right)
+    public static int MajorityElement(int[] nums)
     {
-        if (left < right)
-        {
-            int pivot = Partition(vetor, left, right);
-            QuickSort(vetor, left, pivot - 1);
-            QuickSort(vetor, pivot + 1, right);
-        }
-        return vetor;
-    }
+        int major = 0;
+        int index = 0;
+        Dictionary<int, int> counter = new Dictionary<int, int>();
+        counter[nums[0]] = 1; // inicia a primeira posição do dicionário, dando o valor de 1 (ou seja uma ocorrência)
 
-    public int Partition(int[] array, int left, int right)
-    {
-        int pivot = array[right];
-        int i = left - 1;
-
-        for (int j = left; j < right; j++) // lembre que é < right
+        while (index < nums.Length - 1)
         {
-            if (array[j] <= pivot) // para ordenar em ordem crescente, com repetição de valores
+            index++;
+            if (counter.ContainsKey(nums[index]))
             {
-                i++;
-                (array[i], array[j]) = (array[j], array[i]);
+                counter[nums[index]]++; // se esse numero existir, vai ser adicionado uma ocorrencia a sua chave, tipo se 1 existir e tiver 1 inserção feita, após esse passo ficaria <1 , 2>  
+            }
+            else
+            {
+                counter[nums[index]] = 1; // caso não exista, cria uma ocorrencia / par no dicionário
+            }
+
+        }
+
+        foreach (int num in counter.Values)
+        {
+            if (num > major)
+            {
+                major = num;
             }
         }
 
-        (array[i + 1], array[right]) = (array[right], array[i + 1]);
-        return i + 1;
-    }
+        var chave = counter.FirstOrDefault(x => x.Value == major).Key;
 
-    public int FindKthLargest(int[] nums, int k)
-    {
-
-        if (nums.Length == 1)
-        {
-            return nums[0];
-        }
-
-        QuickSort(nums, 0, nums.Length - 1);
-        return nums[nums.Length - k];
-
+        return chave;
     }
 
     public static void Main(string[] args)
     {
-        Solution solution = new Solution();
-        int[] nums = { 3, 2, 1, 5, 6, 4 };
-        int k = 2;
-        int result = solution.FindKthLargest(nums, k);
-        Console.WriteLine(result); // Output: 5
+        int result = MajorityElement(new int[] { 3, 2, 3 });
+        Console.WriteLine(result);
     }
 }
-

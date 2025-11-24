@@ -1,0 +1,19 @@
+# Ignore build outputs and IDE files for the TesteApp project
+/TesteApp/bin/
+/TesteApp/obj/
+
+# Ignore executables, symbols and user-specific files produced by builds
+/TesteApp/*.exe
+/TesteApp/*.dll
+/TesteApp/*.pdb
+/TesteApp/*.runtimeconfig.json
+/TesteApp/*.deps.json
+/TesteApp/*.user
+
+# Optional: Visual Studio and VS Code workspace files
+/.vs/
+/.vscode/
+
+# Ignore other common build folders
+/bin/
+/obj/
