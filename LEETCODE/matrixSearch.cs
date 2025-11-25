@@ -1,4 +1,4 @@
-﻿public class Solution
+public class Solution
 {
     // quando a matrix é declarada como int[][], é chamada como jagged array, então não é acessado com GetLength(0) e sim com Length e matrix[i].Length para o j. Ou seja, GetLength é utilizado para arrays multidimensionais, como int[,]
     public bool SearchMatrix(int[][] matrix, int target)
