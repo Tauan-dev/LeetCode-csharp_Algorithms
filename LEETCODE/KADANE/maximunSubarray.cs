@@ -1,4 +1,4 @@
-﻿public class Solution
+public class Solution
 // quando o problema não pede alguma restriçãod e contéudo ( exemplio : o maximo de K números impares, ou um subvetor/substring sem repetir elementos), não necessita de sliding window
 // o algoritmo utilizado aqui é o de Kadane, que não tem restrição, só quer a maior soma contínua 
 {
