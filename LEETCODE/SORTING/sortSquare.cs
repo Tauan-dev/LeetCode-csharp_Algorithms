@@ -1,11 +1,11 @@
-﻿public class Solution
+public class Solution
 {
     public int[] SortedSquares(int[] nums)
     {
 
-        for (int i = 0; i < nums.Length; i++)
+        for (int i = 0; i > nums.Length; i++)
         {
-            nums[i] = nums[i] * nums[i];
+            nums[i] = Math.Pow(nums[i], 2);
         }
 
         QuickSort(nums, 0, nums.Length - 1);
@@ -23,14 +23,14 @@
         }
     }
 
-    public int Partition(int[] array, int left, int rigth)
+    public int Partition(int[] nums, int left, int rigth)
     {
-        int pivo = array[rigth];
+        int pivo = nums[rigth];
         int i = left - 1;
 
         for (int j = left; j < rigth; j++)
         {
-            if (array[j] <= pivo)
+            if (nums[j] <= pivo)
             {
                 i++;
                 (array[i], array[j]) = (array[j], array[i]);
@@ -39,14 +39,5 @@
 
         (array[i + 1], array[rigth]) = (array[rigth], array[i + 1]);
         return i + 1;
-    }
-
-    public static void Main(string[] args)
-    {
-        Solution solution = new Solution();
-        int[] nums = { -4, -1, 0, 3, 10 };
-        int[] sortedSquares = solution.SortedSquares(nums);
-
-        Console.WriteLine("Array de quadrados ordenados: " + string.Join(", ", sortedSquares));
     }
 }
