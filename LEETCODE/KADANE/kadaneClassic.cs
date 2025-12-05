@@ -1,3 +1,4 @@
+
 // O algoritmo de kadane é um padrão bem útil sempre que você quer o melhor seguimento contínuo de algo
 // exemplos :       
 // Maior subarray de soma máxima (achar o melhor intervalo de lucro/prejuízo),(achar o período com maior temperatuda acumulada, maior consumo de energia, etc)
