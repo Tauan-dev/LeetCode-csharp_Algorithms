@@ -2,9 +2,39 @@ public class Solution
 {
     public int LongestConsecutive(int[] nums)
     {
-        
+        int counter = 1;
+        int longest = 1;
 
-        return nums;
+        QuickSort(nums, 0, nums.Length - 1);
+
+        for (int i = 1; i < nums.Length - 1; i++) // o laço percorre o vetor fazendo a verificação de uma primeira sequencia de numeros
+        {
+            if (nums[i] == nums[i - 1])
+            {
+                continue; // utilizado para ignorar possiveis duplicatas 
+            }
+
+            else if (nums[i] == nums[i - 1] + 1)
+            {
+                counter++; // caso o valor atual seja exatamente a sequencia do anterior o contador é aumentado 
+            }
+            else
+            {
+                if (counter > longest)
+                {
+                    longest = counter;
+                    counter = 1;
+                }
+            }
+
+        }
+
+        if (counter > longest) // faz uma nova comparação com o counter 
+        {
+            longest = counter;
+        }
+
+        return longest;
     }
 
     public void QuickSort(int[] array, int left, int rigth)
@@ -25,14 +55,14 @@ public class Solution
 
         for (int j = left; j < rigth; j++)
         {
-            if (nums[j] < pivo)
+            if (nums[j] <= pivo)
             {
                 i++;
-                (array[i], array[j]) = (array[j], array[i]);
+                (nums[i], nums[j]) = (nums[j], nums[i]);
             }
         }
 
-        (array[i + 1], array[rigth]) = (array[rigth], array[i + 1]);
+        (nums[i + 1], nums[rigth]) = (nums[rigth], nums[i + 1]);
         return i + 1;
     }
 }
